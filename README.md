@@ -57,3 +57,6 @@ No entanto, a métrica mais relevante para este problema é a área sob a curva 
 
 ### 3. 
 
+
+
+<img width="624" height="488" alt="Image" src="https://github.com/user-attachments/assets/b244ee84-a4a8-458f-9f11-41ae2ed7ce26" />

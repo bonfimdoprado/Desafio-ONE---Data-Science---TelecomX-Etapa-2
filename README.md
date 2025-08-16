@@ -52,14 +52,8 @@ A acurácia do modelo foi de 81%, o que significa que ele acertou a previsão em
 
 No entanto, a métrica mais relevante para este problema é a área sob a curva ROC (ROC AUC). Com um ROC AUC Score de 0.85, o modelo se mostra excelente na sua capacidade de distinguir entre clientes que irão evadir (Churn) e aqueles que permanecerão, sendo significativamente melhor que uma previsão aleatória.
 
+<img width="442" height="272" alt="Image" src="https://github.com/user-attachments/assets/5be07e2a-cc5b-4da4-89bd-2057210349f1" />
 
 
-
- Análise e Avaliação do Modelo de Regressão Logística
-A modelagem de Regressão Logística foi construída seguindo as etapas de pré-processamento, divisão de dados e treinamento do modelo. Os resultados obtidos demonstram o bom desempenho do modelo na tarefa de prever a evasão, conforme as métricas abaixo.
-
-Acurácia e ROC AUC
-A acurácia do modelo foi de 81%, o que significa que ele acertou a previsão em 81 de cada 100 casos.
-
-No entanto, a métrica mais relevante para este problema é a área sob a curva ROC (ROC AUC). Com um ROC AUC Score de 0.85, o modelo se mostra excelente na sua capacidade de distinguir entre clientes que irão evadir (Churn) e aqueles que permanecerão, sendo 
+### 3. 
 

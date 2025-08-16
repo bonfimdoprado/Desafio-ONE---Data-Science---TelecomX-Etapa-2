@@ -55,8 +55,39 @@ No entanto, a métrica mais relevante para este problema é a área sob a curva 
 <img width="442" height="272" alt="Image" src="https://github.com/user-attachments/assets/5be07e2a-cc5b-4da4-89bd-2057210349f1" />
 
 
-### 3. 
+### 3. Análise aprofundada das Previsões
+Para entender melhor como o modelo está fazendo suas previsões, analisamos a Matriz de Confusão e a Curva ROC.
 
+Matriz de Confusão:
+
+- Verdadeiros Positivos (191): Clientes que evadiriam e foram identificados corretamente pelo modelo. Este é um acerto valioso, que permite à empresa atuar proativamente.
+
+- Falsos Negativos (183): Clientes que evadiriam, mas que o modelo classificou incorretamente como 'não-churn'. Esse é o erro mais crítico, pois representa clientes perdidos que não foram identificados.
+
+- O recall do modelo para a classe de evasão foi de aproximadamente 0.51, o que indica que ele identificou corretamente apenas cerca de metade dos clientes que de fato iriam evadir.
 
 
 <img width="624" height="488" alt="Image" src="https://github.com/user-attachments/assets/b244ee84-a4a8-458f-9f11-41ae2ed7ce26" />
+
+Curva ROC e AUC Score:
+
+- A área sob a curva ROC (AUC) foi de 0.85. Este valor excelente indica que o modelo tem uma alta capacidade de distinguir entre clientes que irão evadir (churn) e aqueles que permanecerão, sendo significativamente melhor que uma previsão aleatória.
+
+<img width="612" height="445" alt="Image" src="https://github.com/user-attachments/assets/1e225bfd-3d92-428c-a145-5bc84868b104" />
+
+
+### 4. Resumo do projeto
+
+O projeto de Análise e Previsão de Churn para a TelecomX foi dividido em duas etapas principais.
+
+1. Análise Exploratória e de Fatores (Etapa 1): Identificamos os principais fatores que influenciam a evasão de clientes, como o tipo de pagamento, o contrato e a idade (clientes idosos). Essa análise inicial forneceu insights valiosos para a empresa.
+
+2. Modelagem Preditiva (Etapa 2): Com base nos insights da primeira etapa, criamos e avaliamos um modelo de Regressão Logística. Após o pré-processamento de dados e a categorização de variáveis-chave, o modelo obteve uma acurácia de 81%. Mais importante, o ROC AUC Score de 0.85 demonstra a sua excelente capacidade de prever com precisão os clientes que estão em risco de evadir. A Matriz de Confusão revelou que o modelo identificou corretamente a maioria dos clientes que não evadiram, mas que ainda tem espaço para melhoria na identificação dos que de fato evadirão.
+
+O recall do modelo de 0.51 mostra que apenas pouco mais da metade dos clientes que de fato evadiriam foram identificados. Esse é um índice que precisa de atenção, pois afeta diretamente a capacidade da empresa de atuar proativamente na retenção de clientes.
+
+Em suma, o projeto resultou em uma ferramenta poderosa para a TelecomX, que pode ser usada para identificar clientes em risco de churn de forma proativa. O modelo oferece uma base sólida para a criação de estratégias de retenção de clientes mais eficazes e direcionadas. A ideia no futuro é continuar melhorando a previsibilidade do modelo com técnicas mais avançadas para melhorar este índice, mas já foi muito importante entender todo o processo de pré-processamento e machine learning.
+
+## Autor
+
+* **Matheus Bonfim do Prado**: @bonfimdoprado (https://github.com/bonfimdoprado)
